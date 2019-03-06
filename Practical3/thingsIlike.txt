@@ -1,0 +1,23 @@
+I like music
+I like sunshine
+I like flowers
+I like sleeping
+<<<<<<< HEAD
+I don't like eating
+I like Nora
+I like games
+I like Nora'face.
+I like Harper's teeth
+I like fujing
+I like yangrong
+I like liuwen
+I like wangyuan
+=======
+I like eating
+I like hamburgers
+I like apples
+I like drawing
+I like Nora.
+I like cheese
+I like game
+>>>>>>> master
