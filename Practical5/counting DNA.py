@@ -5,7 +5,8 @@ Created on Wed Mar 20 08:53:10 2019
 @author: admin
 """
 
-sequence=input()
+sequence=input("Please input a DNA sequence:", )
+# spilt the sequence with blanks
 sequence=sequence.split(" ")
 myDirt={}
 for word in sequence:
