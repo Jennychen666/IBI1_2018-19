@@ -10,7 +10,7 @@ import xml.dom.minidom
 import re
 import pandas as pd
 
-filePath=r'C:/Users/admin/Desktop/IBI/IBI1_2018-19/week8/practical 8';  # file path
+filePath=r'C:/Users/admin/Desktop/IBI/IBI1_2018-19/Practical8/practical 8';  # file path
 fileName='go_obo.xml';
 resName='autophagosome.xlsx'
 file=filePath+'/'+fileName
@@ -20,6 +20,7 @@ re_immu = re.compile(r'autophagosome')
 #Function to find childnodes 
 def Child(id, resultSet):
     for t in go:
+        #search the descendants with the type name in ()
         parents = t.getElementsByTagName('is_a')
         geneid = t.getElementsByTagName('id')[0].childNodes[0].data
         for parent in parents:
@@ -39,7 +40,7 @@ obo = DOMTree.documentElement
 go = obo.getElementsByTagName('term')
 for term in go:
     defstr = term.getElementsByTagName('defstr')[0].childNodes[0].data
-    #find terms that contain the word 'autophagosome'
+    #find terms that contain the word 'autophagosome' use re.search()
     if re_immu.search(defstr):
         id = term.getElementsByTagName('id')[0].childNodes[0].data
         name = term.getElementsByTagName('name')[0].childNodes[0].data
