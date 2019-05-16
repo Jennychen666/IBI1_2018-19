@@ -1,0 +1,5 @@
+I met some tricky problems in this pratical.
+In the SIR_vaccination model(section 4), the legend showing the probabilities required adding a loop and I amended for several times.
+In the Spatial_SIR model(section 5), it was difficult to output the correct plots due to the complicated loop structure.
+The process was interesting as the plots were shown and the results were amazing.
+

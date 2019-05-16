@@ -13,16 +13,18 @@ N=10000 #population
 beta=0.3
 # recover (R) with recovery probability γ 
 gamma=0.05
+ #set arrays to add the values
 infected=[1]
 susceptible=[9999]
 recovered=[0]
-I=1 #infected 
+I=1 #initial infected people
 R=0 #recovered 
 S=9999 #susceptible
-
+#print three types of people
 for i in range(1,1001):
+  #randomly choose the people becoming infected
+  #randomly choose the recovered people 
   r1=np.random.choice(range(2),S,p=[1-beta*I/N,beta*I/N])
-#L1数组总和为1显示感染
   s1=sum(r1)
   S=S-s1
   I=I+s1
@@ -38,8 +40,8 @@ print("The present susceptible people:",S)
 print("The present infected people:",I)
 print("The present recovered people:",R)
 
-plt.figure(figsize =(6,4) , dpi=150)
-#put at the beginning, or there will be a blank graph.
+#plot the chart
+plt.figure(figsize =(6,4) , dpi=150)  #put at the beginning, or there will be a blank graph.
 plt.plot(infected)
 plt.plot(susceptible)
 plt.plot(recovered)
@@ -47,6 +49,6 @@ plt.xlabel('time')
 plt.ylabel('number of people')
 plt.title('SIR'+ ' '+'model')
 plt.legend(labels=['infected','susceptible','recovered'],loc='upper right')
-
-plt.savefig('C:/Users/admin/Desktop/IBI/IBI1_2018-19/week12/SIR_model.png',type='png')
+#save to png
+plt.savefig('C:/Users/admin/Desktop/IBI/IBI1_2018-19/Practical12/SIR_model.png',type='png')
 
