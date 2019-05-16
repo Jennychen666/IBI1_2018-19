@@ -18,11 +18,11 @@ lfile=fpath+'/'+lname
 #the body file
 bname = 'body.txt'
 bfile = fpath+'/'+bname
-#regex precompile
+#regex precompile,the correct form of the e-mail address
 re_email = re.compile(r'^[0-9A-Za-z_]+@[0-9A-Za-z_]+(\.[0-9A-Za-z_]+)+$')
 re_loginname = re.compile(r'(\S+)@')
 
-############TEST THE ADDRESS############
+#test the address
 with open(lfile, 'r') as info:
     info = info.read()
 all = re.split(r'[,\n]',info) 
@@ -36,9 +36,10 @@ for i in range(1,len(mList)):
         print(mList[i][1],':Correct Address！')
     else: 
         print(mList[i][1],':Wrong Address！')
+        #remove the wrong address from the List
         filter_list.remove(mList[i])
         
-############SEND THE EMAIL############
+#send the email
 with open(bfile, 'r') as rbody:     
     rbody = rbody.read()
    
