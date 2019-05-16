@@ -1,1 +1,2 @@
-Everything went well.
+I met problems when I used GitKraken.Sometimes I forgot to change repo(IBI_1-2018-19) to push the files.
+The use of GitHub and the foundation of websites were not difficult for me.
