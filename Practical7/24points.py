@@ -21,7 +21,6 @@ while i:
             print('The input number must be intergers from 1 to 23')
             i = 1
             break
-
 #turn tuple() into lists[] to change the values
 num = list(map(int,numList))  
 #recursion times
@@ -33,7 +32,7 @@ def dfs(n):
     count = count +1
     
     if n == 1:
-        if(int(num[0])==24):
+        if(float(num[0])==24):
             return 1
         else:
             return 0
@@ -41,7 +40,8 @@ def dfs(n):
     for i in range(0,n):
         for j in range(i+1,n):
             a = num[i]
-            b = num[n-1]
+            b = num[j]
+            num[j]= num[n-1]
             
             num[i] = a+b
             if(dfs(n-1)):
@@ -60,6 +60,7 @@ def dfs(n):
                 return 1  
             
             if a:
+                #floats are not precise
                 num[i] = Fraction(b,a)
                 if(dfs(n-1)): 
                     return 1    
