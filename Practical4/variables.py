@@ -9,7 +9,7 @@ a=123
 b=123123
 c=b/7
 d=c/11
-e=d/13
+e=int(d/13)
 print('e is',e)
 if e==a:
     print('e is equal to a')
