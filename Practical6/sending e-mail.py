@@ -58,7 +58,7 @@ for char in filter_list:
     to_name.append(to_addr,'ascii')
     
     msg = MIMEText(body,'plain','utf-8')
-    msg['From'] =  from_name
+    msg['From'] = from_name
     msg['To'] = to_name
     msg['Subject'] = Header(subject,'utf-8')
     

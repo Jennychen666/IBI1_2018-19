@@ -5,9 +5,8 @@ Created on Wed Mar 20 08:53:10 2019
 @author: admin
 """
 
-sequence=input("Please input a DNA sequence:", )
-# spilt the sequence with blanks
-sequence=sequence.split(" ")
+sequence=input("Please enter a DNA sequence:", )
+#the code was amended to  have a prompt for users and word without spaces
 myDirt={}
 for word in sequence:
     if word in myDirt:
