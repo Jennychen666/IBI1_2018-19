@@ -1,0 +1,6 @@
+For practical 3, I created a website and edited it. I made a mistake that the website I had created did not fit my Github user name.
+According to my feedback, I rewrote the reflection.txt and had informative commit messages.
+For practical 4, I forgot to push the four files in formative assessment. I have added pseudocode and pushed them.
+For practical 5,  in the script that counts DNA nucleotides, I added a prompt "Please input a DNA sequence: " for users to input correctly and better understand.
+Also, I amended the code so that it works without spaces, which would not confuse the users.
+In the code for reversing words and sorting them, I added a prompt"Please input a string:" and asked users to input instead of hard-coding the string in the script.
