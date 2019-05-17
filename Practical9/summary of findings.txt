@@ -1,4 +1,4 @@
-Practical9:
+Practical9 summary:
 
 The BLOSUM score for human-mouse comparison:1091
 The BLOSUM score for human-random comparison:-250
