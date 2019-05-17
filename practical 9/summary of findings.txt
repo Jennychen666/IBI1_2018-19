@@ -1,8 +1,0 @@
-Practical9:
-
-The BLOSUM score for human-mouse comparison:1091
-The BLOSUM score for human-random comparison:-250
-The BLOSUM score for mouse-random comparison:-250
-Identity for human-mouse comparison is :89.63963963963964%
-Identity for human-random comparison is:5.405405405405405%
-Identity for mouse-random comparison is:5.8558558558558556%
